@@ -1,0 +1,40 @@
+body{
+	width: 720px;
+}
+#title{
+	margin: 10px;
+}
+
+#title ul{
+	text-align: center;	
+}
+
+#title ul li{
+	list-style: none;
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	background-color: #888;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+#content{
+	position: absolute;
+	text-align: center;
+}
+#left{
+	float: left;
+	position: relative;
+	background-color: #f0f0f0;
+	width: 240px;
+	height: 400px;
+	display: inline-block;
+}
+
+#right{
+	background-color: #808080;
+	width: 640px;
+	height: 400px;
+	display: inline-block;
+}

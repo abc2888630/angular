@@ -3,9 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>angular+requirejs</title>
+	<link rel="icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<script src='../js/require.js' data-main='main'></script>
 </head>
 <body ng-controller="mainController">
-	<div>{{hello}}</div>
+	<div id="title">
+		<ul>
+			<li>GIS</li>
+			<li>数据</li>
+			<li>列表</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="left"></div>
+		<div id="right"></div>
+	</div>
 </body>
 </html>
