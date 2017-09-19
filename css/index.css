@@ -15,8 +15,11 @@ body{
 	width: 80px;
 	height: 50px;
 	background-color: #888;
-	line-height: 35px;
+	line-height: 50px;
 	vertical-align: middle;
+	border: #BC4CE3 solid 2px;
+    padding: 5px;
+    margin: 1px;
 }
 
 #content{

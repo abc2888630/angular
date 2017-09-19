@@ -5,19 +5,22 @@
 	<title>angular+requirejs</title>
 	<link rel="icon" href="../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/ol.css">
 	<script src='../js/require.js' data-main='main'></script>
 </head>
 <body ng-controller="mainController">
 	<div id="title">
 		<ul>
-			<li>GIS</li>
-			<li>数据</li>
-			<li>列表</li>
+			<li ng-repeat="item in tabs.items" ng-bind="item.id" ng-click="tabs.onItemClick(item)"></li>
+			<!-- <li>数据</li>
+			<li>列表</li> -->
 		</ul>
 	</div>
-	<div id="content">
+
+	<!-- <div id="content">
 		<div id="left"></div>
 		<div id="right"></div>
-	</div>
+	</div> -->
+	<div ui-view></div>
 </body>
 </html>

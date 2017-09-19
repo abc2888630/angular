@@ -9,10 +9,6 @@ require.config({
     
     shim: {
         'angular':{exports:'angular'},
-        'angular-ui-router': {
-            deps: ['angular'],
-            exports:'uiRouter'
-        },
 
         'app': {
             deps: ['angular']
