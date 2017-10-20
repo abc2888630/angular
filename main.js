@@ -4,7 +4,8 @@ require.config({
     
     paths: {
         'angular': 'js/angular.min',
-        'uiRouter': 'js/angular-ui-router.min'
+        'uiRouter': 'js/angular-ui-router.min',
+        'jquery': 'jquery-2.2.4.min'
     },
     
     shim: {
