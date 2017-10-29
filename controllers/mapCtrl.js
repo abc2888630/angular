@@ -126,8 +126,16 @@ define([
 				// 	return style;
 				// }
 			});
+			var GoogleMapSource = new ol.source.XYZ({
+				//url:"http://mt0.google.cn/vt/lyrs=m@1&hl=en-US&gl=cn&x={x}&y={y}&z={z}&s=Galil"
+				url:"http://mt0.google.cn/vt/lyrs=m@1&hl=zh-CN&gl=cn&x={x}&y={y}&z={z}&s=Galil",
+			});
+			var GoogleMap = new ol.layer.Tile({
+				source:GoogleMapSource,
+				opacity:0.7
+			});
 			var map = new ol.Map({
-				layers: [vector],
+				layers: [vector, GoogleMap],
 				target: 'map',
 				view: new ol.View({
 					center: center,
