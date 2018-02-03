@@ -1,7 +1,7 @@
 define([
 		'uiRouter',
-		'../modules/controllers',
-		'../configures/router'
+		'./modules/controllers',
+		'./configures/router'
 ],function (uiRouter, controllers, router) {
 	'use strict'
 
