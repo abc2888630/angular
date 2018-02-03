@@ -1,6 +1,6 @@
 "use strict"
 require.config({
-    baseUrl: '../',
+    baseUrl: './',
     
     paths: {
         'angular': 'js/angular.min',
