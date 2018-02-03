@@ -17,13 +17,13 @@ define([
 							zoom: 10
 						}),
 						interactions:new ol.interaction.defaults({
-							mouseWheelZoom:false,
+							mouseWheelZoom:true,
 							doubleClickZoom:false,
 							dragPan:false
 						}),
 						controls:new ol.control.defaults({
 							attribution:false,
-							zoom:false
+							zoom:true
 
 						}) 
 					});
@@ -142,9 +142,9 @@ define([
 					zoom: 10
 				}),
 				interactions:new ol.interaction.defaults({
-					mouseWheelZoom:false,
+					mouseWheelZoom:true,
 					doubleClickZoom:false,
-					dragPan:false
+					dragPan:true
 				}),
 				controls:new ol.control.defaults({
 					attribution:false,
