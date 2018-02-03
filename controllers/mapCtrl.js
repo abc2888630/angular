@@ -1,5 +1,5 @@
 define([
-	'../js/ol'
+	'./js/ol'
 	], function(ol){
 		'use strict'
 

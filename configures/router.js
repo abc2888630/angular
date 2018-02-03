@@ -16,17 +16,17 @@ define(["app"],function(app){
 			$stateProvider
 			.state('GIS',{
 				url:'/GIS',
-				templateUrl: '../views/map.html',
+				templateUrl: './views/map.html',
 				controller: 'mapCtrl'
 			})
 			.state('Data',{
 				url:'/Data',
-				templateUrl: '../views/data.html',
+				templateUrl: './views/data.html',
 				controller: 'mapCtrl'
 			})
 			.state('List',{
 				url:'/List',
-				templateUrl: '../views/list.html',
+				templateUrl: './views/list.html',
 				controller: 'mapCtrl'
 			})
 		})
