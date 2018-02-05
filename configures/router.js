@@ -23,12 +23,12 @@ define(["app"],function(app){
 			.state('Data',{
 				url:'/Data',
 				templateUrl: path+'../views/data.html',
-				controller: 'mapCtrl'
+				controller: 'dataCtrl'
 			})
 			.state('List',{
 				url:'/List',
 				templateUrl: path+'../views/list.html',
-				controller: 'mapCtrl'
+				controller: 'listCtrl'
 			})
 		})
 	 
