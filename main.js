@@ -5,10 +5,10 @@ require.config({
     paths: {
         'angular': 'js/angular.min',
         'uiRouter': 'js/angular-ui-router.min',
-        'jquery': 'jquery-2.2.4.min',
+        'jquery': 'js/jquery-2.2.4.min',
         
         // 自定义
-        "res": "/res",
+        "res": "js/res",
     },
     
     shim: {
