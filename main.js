@@ -12,7 +12,7 @@ require.config({
         'angular':{exports:'angular'},
 
         'app': {
-            deps: ['angular']
+            deps: ['angular','res']
         }
     },
     deps: ['bootstrap'],//要先加载bootstrap.js文件
