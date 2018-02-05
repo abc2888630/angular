@@ -4,8 +4,13 @@ define([
 		'./configures/router'
 ],function (uiRouter, controllers, router) {
 	'use strict'
-
-    var app = angular.module('myApp', ['ui.router','appRouter', 'myApp.controller']);
+	//注入框架的配置文件
+    var dependency = [
+		"ui.router",
+		"appRouter",
+		"myApp.controller"
+    ];
+    var app = angular.module('myApp', dependency);
 
     app.controller('mainController', function ($scope,$state) {
         $scope.hello  = 'requireJS is ok';
