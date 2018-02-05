@@ -18,6 +18,11 @@ require.config({
             deps: ['angular','res']
         }
     },
+    map: {
+        '*': {
+            'css': 'js/requirejs-css.min.js'
+        }
+    },
     deps: ['bootstrap'],//要先加载bootstrap.js文件
     waitSeconds:  0 ,//超时时间 设为0即持续等待
     urlArgs: "bust=" + (new Date()).getTime()//防止读取缓存，调试用
