@@ -6,7 +6,10 @@ require.config({
         'angular': 'js/angular.min',
         'uiRouter': 'js/angular-ui-router.min',
         'jquery': 'js/jquery-2.2.4.min',
-        
+        'simditorModule':'site/assets/scripts/module',
+        'hotkeys':'site/assets/scripts/hotkeys',
+        'simditor': 'site/assets/scripts/simditor',
+        'uploader': 'site/assets/scripts/uploader',
         // 自定义
         "res": "js/res",
     },
@@ -16,6 +19,9 @@ require.config({
 
         'app': {
             deps: ['angular','res']
+        },
+        'simditor': {
+            deps: ['simditorModule', 'hotkeys']
         }
     },
     map: {
