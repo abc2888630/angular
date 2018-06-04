@@ -29,7 +29,7 @@ define([
 					});
 
 					var layer = this.createLayer();
-					console.log(layer);
+					// console.log(layer);
 					map.addLayer(layer);
 
 					return map;

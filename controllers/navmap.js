@@ -35,12 +35,7 @@ define([],function(){
 				],
 				target:'map',
 				view:view
-			})；
-
-			map.on('singleclick',function(e){
-				document.getElementById("info").innerHTML = '';
-				var viewResolution = 
-			})
+			});
 		}
 	}]
 })
