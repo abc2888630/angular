@@ -3,7 +3,8 @@ define([
     //线上github.io
     "css!/css/style.css", 
     "css!/css/ol.css",
-    "css!/css/simditor.css"
+    "css!/css/simditor.css",
+    // "css!/css/app.css"
     //本地
     //"css!/css/style.css",
     //"css!//css/ol.css"

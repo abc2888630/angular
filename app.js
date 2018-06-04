@@ -55,13 +55,20 @@ define([
 					replace: true,
 					link: function (scope, element, attrs) {
 						//console.log("tool ok");
-						
+						toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment'];
 						var editor = new Simditor({
-							textarea: $('#editor')
-							//optional options
+							textarea: $('#editor'),
+							placeholder: '这里输入文字...',
+							defaultImage: './img/noImage.png',
+							toolbar: toolbar,
+							toolbarFloat: true,
+							allowedAttributes: [],
+							upload: location.search === '?upload' ? {
+								url: '/upload'
+							} : false
 						});
-						editor.setValue("hello world");
-						editor.on("blur",function (e) {
+						//editor.setValue("hello world");
+						editor.on("blur", function (e) {
 							editor.getValue();
 						})
 						// editor.blur(function () {
