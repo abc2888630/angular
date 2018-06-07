@@ -30,9 +30,9 @@ define([
 						text: 'Data',
 						address: 'Data'
 					}, {
-						id: 'List',
-						text: 'List',
-						address: 'List'
+						id: 'Editor',
+						text: 'Editor',
+						address: 'Editor'
 					}],
 					setActiveItem: function (item) {
 						if (!item) return this.activeItemId = null;

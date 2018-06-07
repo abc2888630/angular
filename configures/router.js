@@ -25,8 +25,8 @@ define(["app"],function(app){
 				templateUrl: path+'../views/data.html',
 				controller: 'dataCtrl'
 			})
-			.state('List',{
-				url:'/List',
+			.state('Editor', {
+				url: '/Editor',
 				templateUrl: path+'../views/list.html',
 				controller: 'listCtrl'
 			})
