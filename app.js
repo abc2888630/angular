@@ -1,5 +1,6 @@
 define([
 		'uiRouter',
+		'ocLazyLoad',
 		"hotkeys",
 		"simditorModule",
 		'simditor',
@@ -7,10 +8,11 @@ define([
 		'./modules/controllers',
 		'./configures/router'
 	],
-	function (uiRouter, hotkeys, simditorModule, simditor, uploader, controllers, router) {
+	function (uiRouter, ocLazyLoad, hotkeys, simditorModule, simditor, uploader, controllers, router) {
 		'use strict'
 		//注入框架的配置文件
 		var dependency = [
+			"oc.lazyLoad",//懒加载
 			"ui.router",
 			"appRouter",
 			"myApp.controller"
@@ -80,5 +82,4 @@ define([
 			}])
 
 		return app;
-
 	})

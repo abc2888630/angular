@@ -5,6 +5,7 @@ require.config({
     paths: {
         'angular': 'js/angular.min',
         'uiRouter': 'js/angular-ui-router.min',
+        'ocLazyLoad': 'js/ocLazyLoad.min',
         'jquery': 'js/jquery-2.2.4.min',
         'simditorModule':'site/assets/scripts/module',
         'hotkeys':'site/assets/scripts/hotkeys',
